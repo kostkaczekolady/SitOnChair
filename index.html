@@ -33,29 +33,47 @@
 
     <section class="section1">
         <div class="container">
-            <div class="arrows"><a href="link">&lt;</a></div>
-            <div><img src="images/black_chair.png"></div>
+            <div  id="prevPicture" class="arrows">&lt;</div>
+            <div clss="section1a">
+                <ul class="slider">
+                    <li>
+                        <img src="images/black_chair.png" class="sliderImg">
+                    </li>
+                    <!--<li>-->
+                        <!--<img src="images/red_chair.png" id="sliderImg">-->
+                    <!--</li>-->
+                    <li>
+                        <img src="images/orange_chair.png" class="sliderImg">
+                    </li>
+                </ul>
+            </div>
 
-            <div class="logo section1a">
+            <div class="section1b">
                 <div class="logo1">
                     <h1> SIT </h1>
                     <h1 class="green"> ON </h1>
                     <h1> OUR </h1>
                     <h1 class="green"> CHAIR </h1>
                 </div>
-
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores at corporis debitis doloremque ea eestiae necessitatibus nesciunt non obcaecati, quidem ratione saepe sed sequi sunt vitae? Amet incidun.</p>
                 <button>ZOBACZ WIĘCEJ</button>
             </div>
-            <div class="arrows"><a href="link">&gt;</a> </div>
+            <div id="nextPicture" class="arrows">&gt;</div>
         </div>
     </section>
 
     <section class="section2">
         <div class="container">
-            <div id="clair">
-                <div class="opacityWhite">Chair Clair</div></div>
-            <div id="margarita"><div class="opacityWhite">Chair MArgarita</div></div>
+            <div class="clair">
+                <div class="opacityWhite">
+                    <span class="font">Chair Clair</span>
+                </div>
+            </div>
+            <div class="margarita">
+                <div class="opacityWhite">
+                    <span class="font">Chair Margarita</span>
+                </div>
+            </div>
             <div class="section2a">
                 <h3>Finds all inputs</h3>
 
@@ -74,29 +92,30 @@
             <div class="section3a">
 
                 <div class="plans">
-                <h2>BASIC PLAN</h2>
-                <div class="price">
-                    <p> 85<sup>99</sup></p>
-                    <p class="small">PLN/MSC</p>
-                </div>
 
-                <div class="plans_background">
-                    <div class="plans_options2">Zakup towaru + dowóz</div>
-                    <div class="plans_options">Serwis</div>
-                </div>
-                    <div class="button--plans"><button>DOŁĄCZ</button></div>
+                    <h2>BASIC PLAN</h2>
+                    <div class="price">
+                        <p>85<sup>99</sup></p>
+                        <p>pln/msc</p>
+                    </div>
+
+                    <div class="plans_background">
+                        <div class="plans_options1">Zakup towaru + dowóz</div>
+                        <div class="plans_options2">Serwis</div>
+                    </div>
+                        <div class="button--plans"><button>DOŁĄCZ</button></div>
                 </div>
                     <div class="plans grren">
                     <h2>STANDARD PLAN</h2>
                     <div class="price">
-                        <p> 85<sup>99</sup></p>
-                        <p class="small">PLN/MSC</p>
+                        <p>95<sup>99</sup></p>
+                        <p>pln/msc</p>
                     </div>
 
                     <div class="plans_background">
-                        <div class="plans_options">Zakup towaru + dowóz</div>
+                        <div class="plans_options1">Zakup towaru + dowóz</div>
                         <div class="plans_options2">Serwis</div>
-                        <div class="plans_options">Gwarancja 5 lat</div>
+                        <div class="plans_options3">Gwarancja 5 lat</div>
                     </div>
                         <div class="button--plans"><button>DOŁĄCZ</button></div>
 
@@ -104,14 +123,14 @@
                 <div class="plans">
                 <h2>ADVANCE PLAN</h2>
                 <div class="price">
-                    <p> 85<sup>99</sup></p>
-                    <p class="small">PLN/MSC</p>
+                    <p>211<sup>00</sup></p>
+                    <p>pln/msc</p>
                 </div>
                 <div class="plans_background">
-                    <div class="plans_options2">Zakup towaru + dowóz</div>
-                    <div class="plans_options">Serwis</div>
-                    <div class="plans_options2">Gwarancja 5 lat</div>
-                    <div class="plans_options">Porady projektanta</div>
+                    <div class="plans_options1">Zakup towaru + dowóz</div>
+                    <div class="plans_options2">Serwis</div>
+                    <div class="plans_options3">Gwarancja 5 lat</div>
+                    <div class="plans_options4">Porady projektanta</div>
                 </div>
                 <div class="button--plans"><button>DOŁĄCZ</button></div>
             </div>
@@ -121,41 +140,45 @@
     </section>
 
 
+
     <section class="section4">
         <div class="container">
             <div class="title">
             <h2><span>KONTAKT</span></h2>
             </div>
-            <div class="section4a">
-                    <form>
-                        <p>
-                            <label>
-                                <input type="text" placeholder=" Imię">
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <input type="email" placeholder=" email">
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                <textarea type="textarea" placeholder=" Wiadomość"></textarea>
-                            </label>
-                        </p>
+            <div class="section_4">
+                <div class="section4a">
+                        <form>
+                            <p>
+                                <label>
+                                    <input type="text" placeholder=" Imię">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <input type="email" placeholder=" email">
+                                </label>
+                            </p>
+                            <p>
+                                <label>
+                                    <textarea type="textarea" placeholder=" Wiadomość"></textarea>
+                                </label>
+                            </p>
 
-                    </form>
+                        </form>
 
+                </div>
 
-            <div class="section4b">
-                <img src="images/red_chair.png">
-
-                <input class="check" type="checkbox" name="zgoda" value="" />Zgadzam się na przetwazanie danych osobowych
-                <p>
-                    <button type="submit"><h2>WYŚLIJ</h2></button>
-                </p>
+                <div class="section4b">
+                    <img src="images/red_chair.png">
+                    <div class="checkbox">
+                        <img src="img/form_ok.jpg" alt="">
+                        <p>Zgadzam się na przetwarzanie danych osobowych</p>
+                    </div>
+                        <button type="submit" class="send">WYŚLIJ</button>
+                </div>
             </div>
-            </div>
+         </div>
 
         </div>
     </section>
@@ -164,20 +187,23 @@
 
             <p>Copyright 2018 | All Rights Reserved. -Sit On Chair</p>
 
-        <div class="logo2">
+        <div class="media">
             <img src="images/twitter.png"><a href=""></a>
             <img src="images/vimeo.png">
             <img src="images/pinterest.png">
             <img src="images/flickr.png">
 
+            <div class="logo2">
                 <p>SIT</p>
                 <p class="gray">ON</p>
                 <p>CHAIR</p>
-
-
+            </div>
         </div>
+
+
     </footer>
 
+    <script src="js/app.js"></script>
 
 
 </body>
