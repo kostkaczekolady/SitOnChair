@@ -1,4 +1,6 @@
-var clair = document.querySelector('div.clair');
+//event po najechaniu myszką
+
+var clair = document.querySelector('div .clair');
 var margarita = document.querySelector('div .margarita');
 
 clair.addEventListener('mouseover', function(){
@@ -14,10 +16,11 @@ margarita.addEventListener('mouseout', function(){
     margarita.firstElementChild.classList.remove('showTitle');
 });
 
-
+//tworze slider
 var next = document.getElementById('prevPicture');
 var prev = document.getElementById('nextPicture');
 var list = document.querySelectorAll('.slider li');
+
 var counter = 0;
 
 list[counter].classList.add('visible');
@@ -41,3 +44,5 @@ prev.addEventListener('click', function () {
     list[counter].classList.add('visible');
 
 }, false);
+
+//kalkulator
